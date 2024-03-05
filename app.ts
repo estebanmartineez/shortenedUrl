@@ -8,7 +8,7 @@ import mongoose from "mongoose";
 const app = express();
 
 //connection mongoose
-mongoose.connect('mongodb://localhost:27017/url_shortened').then(() => {
+mongoose.connect('mongodb://user:userPassword@localhost:27017/shortenedUrl').then(() => {
     console.log('Database connected');
 })
 

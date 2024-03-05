@@ -7,7 +7,7 @@ const urlService = new UrlService();
 
 
 router.post("/shorten", urlService.createShortUrl);
+router.get("/top", urlService.getTopsUrls);
 router.get("/:shortUrl", urlService.redirectToOriginalUrl);
-router.get('/top', urlService.getTopsUrls)
 
 export default router;
